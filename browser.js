@@ -16,7 +16,6 @@ export function randomBytes (size, cb) {
     throw new Error('Secure random number generation is not supported by this browser.\nUse Chrome, Firefox or Internet Explorer 11')
   }
 
-
   // phantomjs needs to throw
   if (size > MAX_UINT32) throw new RangeError('requested too many random bytes')
 
